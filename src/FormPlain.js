@@ -39,6 +39,11 @@ class FormPlain extends Component {
         type: Elements.LABEL,
         title: 'Passwords match',
       },
+      {
+        type: Elements.BUTTON,
+        title: 'Use setData func',
+        onClick: this.fillData,
+      },
     ];
 
     kateFormInit(elements);
@@ -54,6 +59,11 @@ class FormPlain extends Component {
     } else {
       this.content.passwordsMatchText.title = 'Passwords match';
     }
+  }
+  fillData = () => {
+    this.props.setValues({ email: 'test@test.com', password: '123', password2: '123' });
+    this.content.email.hidden = false;
+    this.checkPasswords();
   }
   render() {
     return (

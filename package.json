@@ -2,10 +2,19 @@
   "name": "kate-form-demo",
   "version": "1.0.0",
   "dependencies": {
-    "kate-form": "^1.0.0",
+    "@material-ui/core": "1.2.1",
+    "@material-ui/icons": "1.1.0",
+    "classnames": "^2.2.6",
+    "history": "^4.7.2",
+    "kate-form": "file:../kate-form-package",
+    "material-kit-react": "file:../material-kit-react",
+    "moment": "2.22.2",
     "react": "^16.3.2",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-datetime": "2.14.0",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6"
@@ -15,5 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0"
   }
 }

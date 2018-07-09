@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { NavLink } from 'react-router-dom';
+
 import './App.css';
 
 import FormProxy from './FormPlain';
@@ -9,10 +10,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+        <p>
+          <NavLink to="/material">Material demo</NavLink>
+        </p>
         <p className="App-intro">
           Form Plain
         </p>
