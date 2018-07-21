@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { NavLink } from 'react-router-dom';
+
 import './App.css';
 
 import FormProxy from './FormPlain';
@@ -9,10 +10,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+        <p>
+          <NavLink to="/kate-form-demo/material/inputs">Material demo</NavLink>
+        </p>
         <p className="App-intro">
           Form Plain
         </p>
@@ -22,6 +22,9 @@ class App extends Component {
         </p>
         <div style={{margin: 'auto', width: 'fit-content'}}>
           <FormProxyLayout />
+        </div>
+        <div style={{ marginTop: 50 }}>
+          <a target="_blank" href="https://github.com/romannep/kate-form-demo">View source</a>
         </div>
       </div>
     );
