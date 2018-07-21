@@ -1,17 +1,14 @@
 {
   "name": "kate-form-demo",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "homepage": "https://romannep.github.io/kate-form-demo/",
   "dependencies": {
-    "@material-ui/core": "1.2.1",
-    "@material-ui/icons": "1.1.0",
-    "classnames": "^2.2.6",
+    "@material-ui/icons": "^1.1.0",
     "history": "^4.7.2",
-    "kate-form": "file:../kate-form-package",
-    "material-kit-react": "file:../material-kit-react",
+    "kate-form": "^1.0.3",
+    "kate-form-material-kit-react": "^0.1.9",
     "moment": "2.22.2",
     "react": "^16.3.2",
-    "react-custom-scrollbars": "^4.2.1",
-    "react-datetime": "2.14.0",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
@@ -23,9 +20,17 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0"
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-babel-module": "^4.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.7.0"
   }
 }

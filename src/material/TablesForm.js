@@ -4,12 +4,11 @@ import { KateForm, withKateForm } from 'kate-form';
 
 import { Elements } from 'kate-form-material-kit-react';
 
-import Card from 'material-kit-react/dist/components/Card/Card';
-import CardBody from 'material-kit-react/dist/components/Card/CardBody';
-
 import moment from 'moment';
 
 const kateFormPath = 'tablesForm';
+
+const contentStyle = { backgroundColor: '#fff', padding: 30 };
 
 class TablesForm extends Component {
   componentWillMount() {
@@ -115,11 +114,9 @@ class TablesForm extends Component {
     return (
       <div>
         <h3>Table connectors</h3>
-        <Card>
-          <CardBody>
-            <KateForm path={kateFormPath} />
-          </CardBody>
-        </Card>
+        <div style={contentStyle}>
+          <KateForm path={kateFormPath} />
+        </div>
       </div>
     );
   }

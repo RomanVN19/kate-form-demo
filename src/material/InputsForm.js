@@ -4,17 +4,22 @@ import { KateForm, withKateForm, getValues } from 'kate-form';
 
 import { Elements } from 'kate-form-material-kit-react';
 
-import Card from 'material-kit-react/dist/components/Card/Card';
-import CardBody from 'material-kit-react/dist/components/Card/CardBody';
-
 
 const kateFormPath = 'inputsForm';
+
+const contentStyle = { backgroundColor: '#fff', padding: 30 };
 
 class InputsForm extends Component {
   componentWillMount() {
     const { kateFormInit, kateFormContent } = this.props;
 
     const elements = [
+      {
+        id: 'button',
+        type: Elements.BUTTON,
+        title: 'Show alert',
+        onClick: this.showAlert,
+      },
       {
         id: 'input',
         type: Elements.INPUT,
@@ -108,15 +113,34 @@ class InputsForm extends Component {
     this.content.label.author = element.id;
     this.content.allValues.title = `All values: ${JSON.stringify(getValues(data))}`;
   }
+  showAlert = () => {
+    // example user showAlert func provided by MainLayout
+    this.props.showAlert({
+      type: 'info',
+      title: 'INFO',
+      desciption: 'info alert',
+      timeout: 1,
+    });
+    this.props.showAlert({
+      type: 'success',
+      title: 'INFO',
+      desciption: 'success alert',
+      timeout: 2,
+    });
+    this.props.showAlert({
+      type: 'warning',
+      title: 'INFO',
+      desciption: 'warning alert',
+      timeout: 3,
+    });
+  }
   render() {
     return (
       <div>
         <h3>Inputs connectors</h3>
-        <Card>
-          <CardBody>
-            <KateForm path={kateFormPath} />
-          </CardBody>
-        </Card>
+        <div style={contentStyle}>
+          <KateForm path={kateFormPath} />
+        </div>
       </div>
     );
   }

@@ -35,9 +35,9 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Switch>
-        <Route path="/minimal" component={Minimal} />
-        <Route path="/material" component={Material} />
-        <Route render={() => <Redirect to="/minimal" />} />
+        <Route path="/kate-form-demo/minimal" component={Minimal} />
+        <Route path="/kate-form-demo/material" component={Material} />
+        <Route render={() => <Redirect to="/kate-form-demo/minimal" />} />
       </Switch>
     </Router>
   </Provider>,

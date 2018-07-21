@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <p>
-          <NavLink to="/material">Material demo</NavLink>
+          <NavLink to="/kate-form-demo/material/inputs">Material demo</NavLink>
         </p>
         <p className="App-intro">
           Form Plain
@@ -22,6 +22,9 @@ class App extends Component {
         </p>
         <div style={{margin: 'auto', width: 'fit-content'}}>
           <FormProxyLayout />
+        </div>
+        <div style={{ marginTop: 50 }}>
+          <a target="_blank" href="https://github.com/romannep/kate-form-demo">View source</a>
         </div>
       </div>
     );

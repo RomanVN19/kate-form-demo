@@ -4,11 +4,9 @@ import { KateForm, withKateForm } from 'kate-form';
 
 import { Elements } from 'kate-form-material-kit-react';
 
-import Card from 'material-kit-react/dist/components/Card/Card';
-import CardBody from 'material-kit-react/dist/components/Card/CardBody';
-
-
 const kateFormPath = 'groupsForm';
+
+const contentStyle = { backgroundColor: '#fff', padding: 30 };
 
 class GroupsForm extends Component {
   componentWillMount() {
@@ -150,12 +148,10 @@ class GroupsForm extends Component {
   render() {
     return (
       <div>
-        <h3>Inputs connectors</h3>
-        <Card>
-          <CardBody>
-            <KateForm path={kateFormPath} />
-          </CardBody>
-        </Card>
+        <h3>Groups connectors</h3>
+        <div style={contentStyle}>
+          <KateForm path={kateFormPath} />
+        </div>
       </div>
     );
   }

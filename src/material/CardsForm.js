@@ -11,10 +11,42 @@ class CardsForm extends Component {
   componentWillMount() {
     const { kateFormInit, kateFormContent } = this.props;
 
+    const tab1Elements = [
+      {
+        id: 'input11',
+        type: Elements.INPUT,
+        title: 'Plain input',
+        onChange: this.inputChange,
+      },
+      {
+        id: 'input12',
+        type: Elements.INPUT,
+        title: 'Plain input with error',
+        error: true,
+        onChange: this.inputChange,
+      },
+    ];
+
+    const tab2Elements = [
+      {
+        id: 'input12',
+        type: Elements.INPUT,
+        title: 'Plain input with error',
+        error: true,
+        onChange: this.inputChange,
+      },
+      {
+        id: 'input11',
+        type: Elements.INPUT,
+        title: 'Plain input',
+        onChange: this.inputChange,
+      },
+    ];
+
     const elements = [
       {
         id: 'card1',
-        title: 'Card 1',
+        title: 'Card with tabs',
         type: Elements.CARD,
         elements: [
           {
@@ -29,6 +61,20 @@ class CardsForm extends Component {
             title: 'Plain input with error',
             error: true,
             onChange: this.inputChange,
+          },
+          {
+            id: 'tabs',
+            type: Elements.TABS,
+            elements: [
+              {
+                title: 'tab1',
+                elements: tab1Elements,
+              },
+              {
+                title: 'tab2',
+                elements: tab2Elements,
+              },
+            ],
           },
           {
             id: 'inputNumbers',

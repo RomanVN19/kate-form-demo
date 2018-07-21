@@ -12,37 +12,37 @@ import CardsForm from './CardsForm';
 
 const routes = [
   {
-    path: '/minimal',
+    path: '/kate-form-demo/minimal',
     title: 'Minimal demo',
   },
   {
-    path: '/material/inputs',
+    path: '/kate-form-demo/material/inputs',
     component: InputsForm,
     title: 'Inputs',
     icon: InputIcon,
   },
   {
-    path: '/material/groups',
+    path: '/kate-form-demo/material/groups',
     component: GroupsForm,
     title: 'Layouts',
     icon: GroupIcon,
   },
   {
-    path: '/material/tables',
+    path: '/kate-form-demo/material/tables',
     component: TablesForm,
     title: 'Tables',
     icon: TableIcon,
   },
   {
-    path: '/material/forms',
+    path: '/kate-form-demo/material/forms',
     component: CardsForm,
-    title: 'Cards',
+    title: 'Cards&tabs',
   },
 ];
 
 
 const Dashboard = props => (
-  <MainLayout routes={routes} {...props} />
+  <MainLayout title="kate-form demo" routes={routes} {...props} />
 );
 
 export default Dashboard;
