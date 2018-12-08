@@ -74,6 +74,13 @@ class InputsForm extends Component {
         onChange: this.inputChange,
       },
       {
+        id: 'checkboxInput',
+        type: Elements.CHECKBOX,
+        title: 'Checkbox',
+        value: false,
+        onChange: this.inputChange,
+      },
+      {
         id: 'label_header',
         type: Elements.LABEL,
         tag: 'h4',

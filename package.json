@@ -1,14 +1,14 @@
 {
   "name": "kate-form-demo",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "homepage": "https://romannep.github.io/kate-form-demo/",
   "author": "Roman Nep <neproman@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@material-ui/icons": "^1.1.0",
     "history": "^4.7.2",
-    "kate-form": "^1.0.3",
-    "kate-form-material-kit-react": "^0.1.9",
+    "kate-form": "^1.1.0",
+    "kate-form-material-kit-react": "^0.3.0",
     "moment": "2.22.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
